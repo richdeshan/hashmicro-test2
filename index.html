@@ -11,24 +11,38 @@
         .mobile-stack {
           display: block !important;
           width: 100% !important;
+          max-width: 100% !important;
         }
+
         .mobile-pad {
-          padding: 30px 20px !important;
+          padding: 20px 15px !important;
+          box-sizing: border-box;
         }
-        .hero-text {
-          font-size: 32px !important;
+
+        .mobile-text {
+          font-size: 13px !important;
+          line-height: 1.5 !important;
+          word-break: break-word;
         }
-        .mobile-no-bg {
-          background-color: #ffffff !important;
+
+        .mobile-title {
+          font-size: 16px !important;
+          line-height: 1.4 !important;
         }
-        .mobile-no-padding {
-          padding: 0 !important;
+
+        .mobile-img {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          display: block !important;
         }
-      }
-      @media (prefers-color-scheme: dark) {
-        .keep-dark {
-          background-color: #2a2a30 !important;
-          color: #ffffff !important;
+
+        table {
+          width: 100% !important;
+        }
+
+        td {
+          box-sizing: border-box;
         }
       }
     </style>
@@ -191,18 +205,31 @@
                   border-bottom: 1px solid #374151;
                 "
               >
-                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  style="width: 100%; max-width: 600px; margin: 0 auto"
+                >
                   <tr>
-                    <td width="300" valign="middle" class="mobile-stack">
+                    <td
+                      width="300"
+                      valign="middle"
+                      class="mobile-stack"
+                      style="padding: 0"
+                    >
                       <img
                         src="https://media.licdn.com/dms/image/v2/C5633AQE2OhRH-PUkYA/productpage-image_1128_635/productpage-image_1128_635/0/1658741541288/hashmicro_hash_construction_suite_image?e=2147483647&v=beta&t=z1InlYPIn7zrNB8po3ueMHm0XOtnXMYT1TOTWXbV9Rw"
                         alt="ERP Feature"
+                        class="mobile-img"
                         width="100%"
                         style="
                           display: block;
                           border: 0;
-                          max-width: 300px;
                           width: 100%;
+                          max-width: 300px;
+                          height: auto;
                         "
                       />
                     </td>
@@ -212,9 +239,10 @@
                       valign="middle"
                       align="center"
                       class="mobile-stack mobile-pad"
-                      style="padding: 40px 20px"
+                      style="padding: 40px 20px; word-break: break-word"
                     >
                       <h3
+                        class="mobile-title"
                         style="
                           color: #d82a2b;
                           font-size: 18px;
@@ -225,12 +253,15 @@
                       >
                         New Modules
                       </h3>
+
                       <p
+                        class="mobile-text"
                         style="
                           color: #9ca3af;
                           font-size: 14px;
                           line-height: 1.6;
-                          margin: 0 0 25px 0;
+                          margin: 0;
+                          word-break: break-word;
                         "
                       >
                         HashMicro ERP is your all-in-one solution designed to
